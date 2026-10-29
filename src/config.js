@@ -21,7 +21,7 @@ export const config = {
 
   // 浏览器配置
   browser: {
-    headless: true,
+    headless: false,
     args: ['--no-sandbox', '--disable-setuid-sandbox', '--start-maximized']
   },
 
