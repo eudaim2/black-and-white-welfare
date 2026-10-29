@@ -30,7 +30,7 @@ jobs:
           npx playwright install --with-deps chromium
 
       - name: 运行自动化脚本
-        run: npm start
+        run: xvfb-run --auto-servernum npm start
         env:
           # Linux.do 账号密码（必需）
           LINUX_DO_USERNAME: ${{ secrets.LINUX_DO_USERNAME }}
